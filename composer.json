@@ -1,0 +1,23 @@
+{
+    "name": "hsteeb/usfm-tools",
+    "description": "Automate checks and changes to USFM Bible files",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "HSteeb\\UsfmTools\\": "src/"
+         }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HSteeb",
+            "email": "hs2013@bible2.net"
+        }
+    ]
+}

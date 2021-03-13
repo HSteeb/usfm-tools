@@ -1,0 +1,5 @@
+{
+  "replaceEmptyS5": true
+, "replace"        : [["@", "<<", ">>", "<", ">"], ["", "\u00ab", "\u00bb", "\u2039", "\u203A"]]
+, "dropIdeUtf8": true
+}
