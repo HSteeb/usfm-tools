@@ -8,10 +8,6 @@
 .PHONY: info
 info:
 	@echo ""
-	@echo "All Tests"
-	@echo ""
-	@echo "  - test       : runs unit tests and integration tests"
-	@echo ""
 	@echo "Unit Tests"
 	@echo "  - phpunit    : runs PHP unit tests"
 	@echo "To run an individual test case:"
@@ -25,15 +21,13 @@ info:
 	@echo "  - idiff      : compare results"
 	@echo "  - isave      : record results"
 	@echo ""
+	@echo "Run sample"
+	@echo "  - sample     : runs sanitize.php on sample/Gn.usfm"
+	@echo ""
 	@echo "General"
 	@echo "  - info       : this text"
 
 
-
-# === All Tests ====================
-
-.PHONY: test 
-test: itest phpunit
 
 # === Unit Test ====================
 .PHONY: phpunit

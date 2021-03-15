@@ -1,4 +1,4 @@
-# usfm-tools.php
+# usfm-tools
 
 Automate checks and changes to USFM Bible files
 
@@ -47,12 +47,11 @@ diff sample/Gn.usfm /tmp/Gn-sanitized.usfm
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/hsteeb/osis2html.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hsteeb/usfm-tools.
 
 ### Basics
 
 - The implementation mainly uses regular expressions (PHP `preg_replace`), grouped in several methods which are under unit test.
-    * The regex patterns are defensive, to allow for white-space and attributes at places where XML allows them.
 - The development version of the script (`sanitizeSrc.php`) is located in subfolder `src/`.
 - It uses class files in namespaces, managed by `composer`.
 - Unit tests are using `PHPunit`.
@@ -78,7 +77,7 @@ composer install
 Run the unit tests:
 
 ```
-make test
+make phpunit
 ```
 
 Build the single-file version `./sanitize.php`:
@@ -126,6 +125,7 @@ GPL3. See the LICENSE file.
 
 Info:
 
+- [USFM format](https://ubsicap.github.io/usfm/about/index.html) ("Unified Standard Format Markers")
 - [OSIS page](https://www.crosswire.org/osis/) (at Cross Wire)
 - [Converting SFM Bibles to OSIS](https://wiki.crosswire.org/Converting_SFM_Bibles_to_OSIS) (at Cross Wire)
 
